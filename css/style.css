@@ -677,3 +677,32 @@ main .home img {
   -ms-transform: translateY(0);
   -o-transform: translateY(0);
 }
+
+/* wivy animation  */
+.waviy {
+  margin-top: 20px;
+  position: relative;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  animation: flip 2s infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes flip {
+  0%
+ {
+  transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+}
+80%{
+  transform: rotateY(360deg) translateY(-15px);
+  -webkit-transform: rotateY(360deg) translateY(-15px);
+  -moz-transform: rotateY(360deg) translateY(-15px);
+  -ms-transform: rotateY(360deg) translateY(-15px);
+  -o-transform: rotateY(360deg) translateY(-15px);
+}
+}
